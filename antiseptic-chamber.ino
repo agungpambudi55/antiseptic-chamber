@@ -1,9 +1,19 @@
+/*
+  Created on Apr 2020
+  Agung Pambudi <agung.pambudi5595@gmail.com>
+*/
+
 #define pinTrig     9
 #define pinEcho     8
 #define pinBuzeer   3
 #define pinPump     2
 
 int state;
+/*
+ * 0 pendeteksian org lewat masuk
+ * 1 persiapan 5 detik ditandai bunyi buzzer setiap detiknya
+ * 2 penyemprotan 5 detik diakhiri buzzer 2 kali cepat
+ */
 
 void setup() {
 //  Serial.begin (115200);
